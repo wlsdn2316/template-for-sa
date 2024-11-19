@@ -2,7 +2,7 @@
 FROM cepgbaseacr.azurecr.io/docker.io/openjdk:17-slim
 
 # Set the working directory
-WORKDIR /app
+WORKDIR /
 
 # Copy Maven build artifact (JAR file) to the container
 COPY target/template-0.0.1-SNAPSHOT.jar app.jar
