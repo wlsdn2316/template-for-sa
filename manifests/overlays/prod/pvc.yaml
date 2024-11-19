@@ -5,7 +5,7 @@ metadata:
 spec:
   accessModes:
     - ReadWriteMany
-  storageClassName: cepg-aa-std-rwmany
+  storageClassName: azurefile
   resources:
     requests:
       storage: 1Gi
