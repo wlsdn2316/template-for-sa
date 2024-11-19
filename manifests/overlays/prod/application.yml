@@ -1,9 +1,9 @@
 spring:
   datasource:
     driver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://localhost:5432/cloud_sample
-    username: sa
-    password: sa
+    url: jdbc:postgresql://ce82265835psql.postgres.database.azure.com:5432/postgres
+    username: adminuser
+    password: JT201wdbaoc!
     hikari:
       maximum-pool-size: 2
       minimum-idle: 2
