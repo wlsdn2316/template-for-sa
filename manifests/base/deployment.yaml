@@ -1,27 +1,19 @@
 apiVersion : apps/v1
 kind: Deployment
 metadata:
-  name: "troubleshooting-app"
-  namespace: troubleshooting
+  name: 82265835
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: "troubleshooting-app"
+      app: "82265835"
   template:
     metadata:
       labels:
-        app: "troubleshooting-app"
+        app: "82265835" 
     spec:
-      tolerations:
-      - key: taint-test
-        operator: Equal
-        value: taint-value
-        effect: NoSchedule
       containers:
-        - name: "troubleshooting-app"
-          image: cepgbaseacr.azurecr.io/troubleshooting:latest
-          resources:
-            limits:
-              memory: 500Mi
-              cpu: 0.2
+        - name: "82265835" 
+          image: ce82265835acr.azurecr.io/82265835
+          ports:
+          - containerPort: 8080
